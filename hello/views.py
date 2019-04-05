@@ -6,6 +6,8 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
+    import os
+    print(os.environ['SECRET_KEY'])
     return render(request, "index.html")
 
 
