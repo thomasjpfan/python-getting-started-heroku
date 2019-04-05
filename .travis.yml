@@ -9,5 +9,8 @@ deploy:
   provider: heroku
   app:
     master: what-is-this-python-staging
+  run:
+    - python manage.py migrate
+    - python maange.py sqlflush
   api_key:
     secure: I26Yw85whYZgm9FoH5AL1G20SSGMw8pG0htc7uNPxp1NpQtsbe+AhPqHq3rBIiZq2rbjsO4+MaNWnvZdWLpYlIhQ70qWhfUvaelhy7s3+zJt5ZHV5qte1ZxRMygFvHBIeO5zexiB4mHn0MIcAlZAam9f8Q6Nv3cPbpu+Zq/A8znNGPzDjBPti1FrxWBUgHdZFQk1TJrVkLLS0YkWZqYpo3NJqVMc0rX5qpIXyrnOtVVdoHP3CVHXI14SM5XNPyjT5cEe6Vg60iid4LEJNjJHjlng6Yv95DB9RvPOkt0lSWWKUMJKTb2IY6wCpU9iIQ8Lm63R3wb73oJp/q/uLP4RoRQOuELaAa4Iz826QX0u+cn7ouLji9gCI0kOipBMdqi6XS9VrBefktqQdAM6YQCytP1a0GzQKHeT3LNsObzMvfTGU/WnxOjc8ym5b3ixlWQy1UZftr5iJDlEZ5ZUWbw+NoS4EQCS0E9LUwOAOpOS8WySr/qTGhAy8jMKrNzqfAcFvL1cjMCfc5IweVRM4T8nRyo2iV5M/ybl8GVJu4ZKAgpP1892Y1AQWptWf73pq08Lj8XrCxh55vHskftGHDn5MRwY+IswvOB5iUJMY2qkSKvf3aeuWNho1yRAIqmvQ+gTN74KouYcKOuFKouqt43z2JZ2MfM4lgvoh8MJQDmbiTk=
