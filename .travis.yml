@@ -3,7 +3,7 @@ language: python
 cache:
 - apt
 - pip
-install:
+script:
 - echo "SUCCESS"
 deploy:
   provider: heroku
