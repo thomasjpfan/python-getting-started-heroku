@@ -1,0 +1,17 @@
+sudo: false
+
+language: python
+
+cache:
+  - apt
+  - pip
+
+install:
+  - echo "SUCCESS"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "$HEROKU_API"
+  app:
+    master: what-is-this-python-staging
