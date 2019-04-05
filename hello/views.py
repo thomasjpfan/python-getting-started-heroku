@@ -7,7 +7,6 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    print(settings.SECRET_KEY)
     return render(request, "index.html")
 
 
